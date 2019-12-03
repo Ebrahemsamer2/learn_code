@@ -35,6 +35,7 @@ class DatabaseSeeder extends Seeder
 
 
         factory('App\Video', 50)->create();
+        
     	$quizzes = factory('App\Quiz', 50)->create();
 
         foreach ($users as $user) {
@@ -48,6 +49,7 @@ class DatabaseSeeder extends Seeder
         }
 
     	factory('App\Question', 50)->create();
+
     	factory('App\Photo', 50)->create();
     }
 }

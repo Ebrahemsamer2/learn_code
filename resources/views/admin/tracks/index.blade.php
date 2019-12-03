@@ -58,7 +58,7 @@
                                     <tr>
                                         <td>{{ $track->name }}</td>
 
-                                        <td>{{ count($track->courses) }} Course</td>
+                                        <td>{{ count($track->courses) }} courses</td>
 
                                         <td>{{ $track->created_at->diffForHumans() }}</td>
                                         <td class="text-right">
