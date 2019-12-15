@@ -52,7 +52,7 @@ Route::group(['middleware' => ['auth', 'admin'] ], function () {
 
 	Route::resource('admin/quizzes.questions', 'Admin\QuizQuestionController');
 
-	Route::resource('admin/questions', 'Admin\QuestionController');
+	Route::resource('admin/questions', 'Admin\QuestionController', ['except' => ['show']]);
 
 	Route::get('admin/profile', ['as' => 'profile.edit', 'uses' => 'Admin\ProfileController@edit']);
 	
@@ -60,4 +60,3 @@ Route::group(['middleware' => ['auth', 'admin'] ], function () {
 	
 	Route::put('admin/profile/password', ['as' => 'profile.password', 'uses' => 'Admin\ProfileController@password']);
 });
-
