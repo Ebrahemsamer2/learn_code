@@ -16,7 +16,6 @@ class CreateQuizzesTable extends Migration
         Schema::create('quizzes', function (Blueprint $table) {
             $table->bigIncrements('id')->unsigned();
             $table->string('name');
-
             $table->bigInteger('course_id')->unsigned();
             $table->foreign('course_id')->references('id')->on('courses')->onDelete('cascade');
 
