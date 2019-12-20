@@ -1,0 +1,82 @@
+/* Main Color: #1c5996; */
+/* Secondary Color: #964b1c; */
+
+
+/* Home page */
+
+.search-form {
+	margin-left: 250px;
+}
+.search-form,
+.search-form input {
+	width: 500px !important;
+	border-radius: 0;
+}
+
+.links ul {
+	margin-right: 40px;
+}
+.links ul li {
+	margin-right: 10px;
+}
+
+.navbar  {
+	background-color: #1c5996!important;
+}
+
+.navbar div a.navbar-brand,
+.navbar div ul li a.nav-link  {
+	color: #fff!important;
+}
+
+.navbar span.logo {
+	background-color: #fff;
+	color: #1c5996;
+	padding: 8px;
+	border-radius: 10px 20px;
+}
+
+
+
+.home_picture {
+	height: 600px;
+	background-image: url('../images/home_default2.jpg');
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-size: cover;
+}
+
+.home_picture .background_text {
+	padding-top: 180px;
+	padding-left: 40px;
+	font-family: Lato;
+
+}
+.home_picture .background_text p:nth-child(1) {
+	font-size: 60px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.home_picture .background_text p:nth-child(2) {
+	font-size: 25px;
+	margin-top: -5px;
+	padding-top: 0;
+	font-weight: 400;
+	margin-left: 5px;
+}
+
+.home_picture .background_text a {
+	width: 200px;
+	border-radius: 0;
+	font-size: 25px;
+	font-weight: 300;
+	margin-top: 30px;
+}
+
+.home_picture .background_text p strong {
+	color: #1c5996;
+}
+.btn-primary {
+	background-color: #1c5996;
+	border-color: #1c5996;
+}
