@@ -76,6 +76,11 @@
 .home_picture .background_text p strong {
 	color: #1c5996;
 }
+
+.home_picture .background_text span.number {
+	color: #964b1c;
+}
+
 .btn-primary {
 	background-color: #1c5996;
 	border-color: #1c5996;
