@@ -72,7 +72,7 @@
     </nav>
 
 
-    @yield('home_picture')
+    @yield('content')
 
 
         <script src="{{ asset('argon') }}/vendor/jquery/dist/jquery.min.js"></script>
