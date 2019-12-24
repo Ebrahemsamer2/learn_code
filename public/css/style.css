@@ -86,7 +86,7 @@
 	border-color: #1c5996;
 }
 
-/* Carusel */
+/* User Courses Carusel */
 
 .carousel {
 	margin-top: 30px;
@@ -156,4 +156,25 @@
 	padding-top: 12px;
 	border-radius: 50%;
 	text-align: center; 
+}
+
+
+/* Famouse Track Courses */
+
+.famous-courses {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+.famous-courses h4 {
+	margin-bottom: 50px;
+	margin-top: 20px;
+	font-family: 'Lato';
+}
+.famous-courses .course h6 {
+	padding: 10px;
+}
+.famous-courses .course img {
+	width: 255px;
+	height: 170px;
+
 }
