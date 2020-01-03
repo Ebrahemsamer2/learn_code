@@ -15,12 +15,16 @@ class HomeController extends Controller
 
 		$tracks = Track::with('courses')->orderBy('id', 'desc')->get();
 
-		// get famous tracks ids
-
 		$famous_tracks_ids = Course::pluck('track_id')->countBy()->sort()->reverse()->keys()->take(10);
 
 		$famous_tracks = Track::withCount('courses')->whereIn('id', $famous_tracks_ids)->orderBy('courses_count', 'desc')->get();
 
-		return view('home', compact('user_courses', 'tracks', 'famous_tracks'));
+		$user_courses_ids = User::findOrFail(1)->courses()->pluck('id');
+
+		$user_tracks_ids = User::findOrFail(1)->tracks()->pluck('id');
+
+		$recommended_courses = Course::whereIn('track_id', $user_tracks_ids)->whereNotIn('id', $user_courses_ids)->limit(4)->get();
+
+		return view('home', compact('user_courses', 'tracks', 'famous_tracks', 'recommended_courses'));
 	}
 }

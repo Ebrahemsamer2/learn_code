@@ -50,6 +50,46 @@
 
 		@endif
 
+
+		@if($i == 2) 
+
+			<div class="recommended-courses">
+				
+				<h4>Recommended courses for you: </h4>
+
+				<div class="courses">
+
+					@foreach($recommended_courses as $course)
+						<div class="course">
+							<div class="row">
+								<div class="col-sm-2">
+									<div class="course-image">
+										@if($course->photo)
+										<img src="/images/{{ $course->photo->filename }}">
+										@else
+										<img src="/images/default.jpg">
+										@endif
+									</div>
+								</div>
+								<div class="col-sm">
+									<div class="course-details">
+										<p class="course-title">{{ \Str::limit($course->title,60) }}</p>
+										<span style="margin-left: 10px; font-weight: 500;" class="{{ $course->status == '0' ? 'text-success' : 'text-danger' }}">{{ $course->status == '0' ? 'FREE' : 'PAID' }}</span>
+										<span style="margin-left: 15%">{{ count($course->users) }} users</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					@endforeach
+
+				</div>
+
+			</div>
+
+		@endif
+
+		
 		<?php $i++; ?>
 		@endforeach
 	</div>
