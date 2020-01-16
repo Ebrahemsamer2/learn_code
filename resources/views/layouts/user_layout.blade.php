@@ -27,7 +27,7 @@
     </head>
     <body class="{{ $class ?? '' }}">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
         <div class="container-fluid">
              
         <a class="navbar-brand" href="#"><span class="logo">LC</span> Learncode</a>

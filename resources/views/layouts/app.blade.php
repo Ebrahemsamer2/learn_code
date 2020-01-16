@@ -18,7 +18,6 @@
         <!-- Argon CSS -->
         <link type="text/css" href="{{ asset('argon') }}/css/argon.css?v=1.0.0" rel="stylesheet">
 
-
         <!-- Favicon -->
         <link href="/assets/img/brand/favicon.png" rel="icon" type="image/png">
 
