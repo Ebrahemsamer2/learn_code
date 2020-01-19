@@ -3,7 +3,17 @@
 @section('content')
 	
 	<div class="container">
-		
+		<div class="col-12">
+	        @if (session('status'))
+	            <div class="alert alert-success alert-dismissible fade show" role="alert">
+	                {{ session('status') }}
+	                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+	                    <span aria-hidden="true">&times;</span>
+	                </button>
+	            </div>
+	        @endif
+	    	</div>
+		        	
 		<div class="row">
 			
 			<div class="course-header">
@@ -79,13 +89,11 @@
 				<div class="col-sm-12">
 					
 					@if(count($course->quizzes) > 0)
-
-						@foreach($course->quizzes as $quizz)
+						@foreach($course->quizzes as $quiz)
 							<div class="quiz">
-								<a target="_blank" href="{{$video->link}}"> {{ $quizz->name }}</a>
+								<a target="_blank" href="/courses/{{ $quiz->course->slug }}/quizzes/{{ $quiz->name }}"> {{ $quiz->name }}</a>
 							</div>
 						@endforeach
-
 					@else
 						<div class="alert alert-secondary">
 							This course does not include any quizzes
@@ -95,11 +103,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
-
 
 
 <!-- Modal -->
