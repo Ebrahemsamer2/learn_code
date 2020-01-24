@@ -19,6 +19,19 @@ Route::get('/search', 'SearchController@index');
 
 Route::get('/tracks/{name}', 'TrackController@index');
 
+
+// Logout 
+
+Route::get('/logout', function() {
+	if(\Auth::check()) {
+		\Auth::logout();
+		return redirect('/home');
+	}else {
+		return redirect('/');
+	}
+})->name('logout');
+
+
 // Admin Routes 
 
 Route::group(['middleware' => ['auth', 'admin'] ], function () {

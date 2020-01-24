@@ -8,7 +8,13 @@ use App\Course;
 use App\Quiz;
 
 class QuizController extends Controller
-{
+{   
+
+
+    public function __construct() {
+        $this->middleware('auth');
+    }
+
     public function index($slug, $name) {
 
         $course = Course::where('slug', $slug)->first();
