@@ -4,12 +4,19 @@
 
 /* Constant */
 
+* {
+	font-family: Lato;
+	box-sizing: border-box;
+}
+
 body {
 	padding-top: 56px;
 }
+
 nav {
 	height: 65px;
 }
+
 /* Home page */
 
 .search-form {
@@ -565,7 +572,6 @@ footer div.footer-copyright a {
 	background: #fff;
 }
 
-
 .search-courses .course .course-info h6 span .free-badge {
 	color: green;
 }
@@ -573,4 +579,43 @@ footer div.footer-copyright a {
 .search-courses .course .course-info h6 span .paid-badge {
 	color: #fff;
 	background-color: #8e1717;
+}
+
+
+/* Track Courses Style  */
+
+
+/* Famouse Track Courses */
+
+.track-courses {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.track-courses h4 {
+	margin-bottom: 40px;
+	font-family: Lato;
+	font-size: 30px;
+	text-align: center;
+}
+
+.track-courses .course {
+    border: 1px solid #eaeaea;
+    padding-bottom: 20px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    margin-bottom: 20px;
+}
+
+.track-courses .course h6 {
+	padding: 10px;
+	min-height: 60px;
+}
+.track-courses .course img {
+	width: 255px;
+	height: 170px;
+	transition: .1s ease-in-out;
+}
+
+.track-courses .course img:hover {
+	opacity: .8;
 }
