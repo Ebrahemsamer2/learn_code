@@ -17,6 +17,12 @@ nav {
 	height: 65px;
 }
 
+.alert-success {
+	top: 15px;
+    position: absolute;
+    left: -15px;
+}
+
 /* Home page */
 
 .search-form {
@@ -354,7 +360,6 @@ footer div.footer-copyright a {
 
 .course-header {
 	margin-top: 50px;
-	margin-bottom: 50px;
 	background: #333;
 	font-family: 'Lato';
 }
@@ -426,6 +431,49 @@ footer div.footer-copyright a {
 	background-color: #8e1717;
 }
 
+.enroll-form {
+	width: 30%;
+	float: right;
+	margin-bottom: 30px;
+}
+
+.enroll-form form,
+.enroll-form div {
+    margin-left: -11px;
+    margin-right: -15px;
+}
+
+.enroll-form .btn-enroll {
+	width: 100%;
+	font-weight: 500;
+	margin-top: 5px;
+	font-size: 20px;
+	height: 56px;
+	font-family: Lato;
+	border-radius: 0;
+	background: #ec5252;
+	border-color: transparent;
+	transition: .3s ease-in-out;
+	color: #fff;
+	box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+}
+.enroll-form .btn-enroll:hover {
+	background-color: #992337;
+}
+
+.enroll-form div {
+	font-size: 20px;
+	color: #e2e2e2;
+	font-weight: 500;
+	background: #3cc5ac;
+	border-color: #3cc5ac;
+	text-align: center;
+	border-radius: 0;
+	margin-top: 5px;
+	height: 60px;
+	opacity: .9;
+	box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+}
 /* Video Course Style */
 
 .videos {
@@ -468,6 +516,20 @@ footer div.footer-copyright a {
 .modal .modal-content {
 	width: 650px;
     text-align: center;
+}
+
+.video.disabled {
+	cursor: not-allowed;
+}
+.video.disabled a {
+	cursor: not-allowed;
+}
+
+.quiz.disabled {
+	cursor: not-allowed;
+}
+.quiz.disabled a {
+	cursor: not-allowed;
 }
 
 /* Quizz Style */
@@ -618,4 +680,115 @@ footer div.footer-copyright a {
 
 .track-courses .course img:hover {
 	opacity: .8;
+}
+
+/* User Courses Style  */
+
+
+.user-courses {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.user-courses h4 {
+	margin-bottom: 40px;
+	font-family: Lato;
+	font-size: 30px;
+}
+
+.user-courses .course {
+    border: 1px solid #eaeaea;
+    padding-bottom: 20px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
+    margin-bottom: 20px;
+}
+
+.user-courses .course h6 {
+	padding: 10px;
+	min-height: 60px;
+}
+
+.user-courses .course img {
+	width: 255px;
+	height: 170px;
+	transition: .1s ease-in-out;
+}
+
+.user-courses .course img:hover {
+	opacity: .8;
+}
+
+
+
+/* User Profile Srtyle */
+
+.user-profile {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.user-profile h3 {
+	margin-bottom: 30px;
+}
+.user-profile .user-info .user-image {
+
+}
+.user-profile .user-info .user-image img {
+	width: 100%;
+	height: auto;
+}
+
+.user-profile .user-info .user-data {
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.user-profile .user-info .user-data ul li {
+	margin-bottom: 15px;
+}
+
+.user-profile .user-info .user-data ul li:nth-child(1) {
+	color: #6d6c6c;
+}
+
+.user-profile .user-info .user-data ul li:nth-child(2) {
+	color: #6d6c6c;
+	font-weight: bold;
+}
+
+
+.user-profile .user-info .user-image form {
+	display: none;
+}
+
+.user-profile .user-info .user-image a {
+	margin: 10px;
+	margin-left: 35%;
+}
+
+
+#errorMessage,
+#message {
+	background-color: #7891bf;
+	color: #fff;
+	font-family: 'Lato';
+	font-size: 18px;
+	border-radius: 2px;
+	position: absolute;
+    left: -100px;
+    padding: 8px 15px;
+    margin: 0;
+    top: 0px;
+    display: none;
+}
+
+#errorMessage {
+	background-color: #9e140e;
+	color: #fff;
+	left: 15px;
+	top: -50px;
+}
+
+
+.user-tracks {
+	margin-top: 30px;
 }

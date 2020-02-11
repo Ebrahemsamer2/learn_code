@@ -35,7 +35,7 @@
 			<div class="famous-tracks">
 				
 				<h4>Famous topic for you</h4>
-
+				
 				<div class="tracks">
 					<ul class="list-unstyled">
 					@foreach($famous_tracks as $famous_track)
