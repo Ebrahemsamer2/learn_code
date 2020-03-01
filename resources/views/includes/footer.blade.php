@@ -11,10 +11,8 @@
       <div class="col-md-4 mx-auto">
 
         <!-- Content -->
-        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Footer Content</h5>
-        <p>Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet,
-          consectetur
-          adipisicing elit.</p>
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Learn with us</h5>
+        <p>Learncode is the most popular courses platform in the world!. Learn all courses for free.</p>
 
       </div>
       <!-- Grid column -->
@@ -81,16 +79,16 @@
 
         <ul class="list-unstyled">
           <li>
-            <a href="#!">Link 1</a>
+            <a href="/home">Home</a>
           </li>
           <li>
-            <a href="#!">Link 2</a>
+            <a href="/allcourses">All Courses</a>
           </li>
           <li>
-            <a href="#!">Link 3</a>
+            <a href="/contact">Contact</a>
           </li>
           <li>
-            <a href="#!">Link 4</a>
+            <a href="/login">login</a>
           </li>
         </ul>
 
@@ -111,7 +109,7 @@
       <h5 class="mb-1">Register for free</h5>
     </li>
     <li class="list-inline-item">
-      <a href="#!" class="btn btn-danger btn-rounded">SIGN UP!</a>
+      <a href="/register" class="btn btn-danger btn-rounded">SIGN UP!</a>
     </li>
   </ul>
   <!-- Call to action -->

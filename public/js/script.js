@@ -86,4 +86,33 @@ $(function() {
 		});
 
 	});
+
+	$("#contactForm").on("submit", function(e) {
+
+		e.preventDefault();
+
+		$.ajax({
+
+			url: '/contact',
+			type: 'POST',
+			data: new FormData(this),
+			dataType: 'JSON',
+			contentType: false,
+			cache: false,
+			processData: false,
+
+			success: function(data) {
+				$("#name").val('');
+				$("#subject").val('');
+				$("#email").val('');
+				$("#the_message").val('');
+
+				$("#message").css('display' , 'block');
+				$(".contact1 #message").text(data.message);
+
+			}
+		});
+
+	});
+
 });

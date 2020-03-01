@@ -26,7 +26,7 @@ nav {
 /* Home page */
 
 .search-form {
-	margin-left: 250px;
+	margin-left: 18%;
 	position: relative;
 }
 
@@ -231,33 +231,47 @@ nav {
 
 /* Famouse Track Courses */
 
-.famous-courses {
+.famous-courses,
+.all-courses {
 	margin-top: 100px;
 	margin-bottom: 50px;
 }
-.famous-courses h4 {
+.famous-courses h4,
+.all-courses h4 {
 	margin-bottom: 20px;
 	margin-top: 50px;
 	font-family: 'Lato';
 }
-.famous-courses .course {
+.famous-courses .course,
+.all-courses .course {
     border: 1px solid #eaeaea;
     padding-bottom: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 1px 1px rgba(20,23,28,.1), 0 3px 1px 0 rgba(20,23,28,.1);
 }
 
+.all-courses .course h6,
 .famous-courses .course h6 {
 	padding: 10px;
 	min-height: 60px;
 }
-.famous-courses .course img {
+.famous-courses .course img,
+.all-courses .course img {
 	width: 255px;
 	height: 170px;
 	transition: .1s ease-in-out;
 }
 
+.all-courses .course img:hover,
 .famous-courses .course img:hover {
 	opacity: .8;
+}
+
+
+/* All Courses Style */
+
+.all-courses {
+	margin-top: 0;
 }
 
 /* Famous Tracks */
@@ -779,6 +793,13 @@ footer div.footer-copyright a {
     margin: 0;
     top: 0px;
     display: none;
+}
+
+.contact1 #message 
+{
+	top: 150px;
+	left: 200px;
+	background-color:#18c374;
 }
 
 #errorMessage {

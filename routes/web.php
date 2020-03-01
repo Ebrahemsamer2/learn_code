@@ -1,5 +1,8 @@
 <?php
 
+Route::get('login/{service}', 'Auth\LoginController@redirectToProvider');
+
+Route::get('login/{service}/callback', 'Auth\LoginController@handleProviderCallback');
 
 // User Routes
 
@@ -26,6 +29,13 @@ Route::get('/mycourses', 'MyCoursesController@index');
 Route::get('/profile', 'ProfileController@index');
 
 Route::post('/profile', 'ProfileController@update');
+
+
+Route::get('/allcourses', 'AllCoursesController@index');
+
+Route::get('/contact', "ContactController@index");
+
+Route::post('/contact', "ContactController@sendEmail");
 
 // Logout 
 
